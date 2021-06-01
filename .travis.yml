@@ -23,3 +23,7 @@ deploy:
     branch: tag
     repo: <operaghost>/<Travis_CI_Tutorial>
 
+notifications:
+ email:
+   - one@example.com(replace by your e-mail)
+
