@@ -12,7 +12,7 @@ deploy:
 provider: releases
 file_glob: true
 skip_cleanup: true
-api_key: $GITHUB_TOKEN
+api_key: $jeddie
 file:
 - .travis.yml
 on:
