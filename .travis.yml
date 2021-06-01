@@ -1,7 +1,21 @@
 # Building a Java project
 language: java
+
 # We can specify a list of JDKs to be used for testing
 jdk:
 - openjdk11
+
 after_success:
 - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: releases
+  file_glob: true
+  skip_cleanup: true
+  api_key: $GITHUB_TOKEN
+  file:
+    - .travis.yml
+  on:
+    tags: true
+    branch: tag
+    repo: XYIheng/Travis_CI_Tutorial
