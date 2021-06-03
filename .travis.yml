@@ -17,4 +17,7 @@ deploy:
     tags: true
     branch: tag
     repo: <your_github_username>/<your_repo_name>
+notifications:
+ email:
+   - 313079187@qq.com
 
